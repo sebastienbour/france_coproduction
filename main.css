@@ -1,0 +1,1163 @@
+body {
+    background-color: #ebebeb; /* Couleur de fond */
+}
+
+/* Permet de coller les boîtes aux bordures de la page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: auto; /* Aligne le titre au milieu */
+    font-size: 4em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.7em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+}
+
+nav {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/* Permet d'aligner sur la même ligne les boîtes suivantes */
+.divFlex {
+    display: flex;
+    justify-content: space-around; /* Créé un espace égal entre chaque élément ainsi que la bordure de l'écran */
+    padding-bottom: 15px;
+}
+
+/* Entête de la page */
+.boxEntete {
+    display: flex; /* Les éléments dans la boîte seront alignés sur la même ligne */
+    width: auto;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: linear-gradient(to top, #333, 45%, rgb(169, 169, 169)); /* Créé un dégradé */
+}
+
+/* Logo de France Coproduction */
+.boxLogoFC {
+    max-width: 300px;
+    min-width: 50px;
+    width: 200px;
+    left: 25px; /* fixe le logo à 25 pixels de la bordure droite de l'écran */
+}
+
+/* Bouton pour se connecter */
+.boxConnexion {
+    width: fit-content; /* La largeur du bouton correspond à celle du contenu */
+    height: fit-content; /* La hauteur du bouton correspond à celle du contenu */
+    padding: 10px;
+    right: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.7em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border-radius: 10px; /* Créé des bords arrondis */
+    background-color: #ebebeb;
+    box-shadow: inset 0 0 10px #4343438c; /* Créé une ombre */
+}
+
+.boxConnexion a {
+    color: rgb(0, 158, 166);
+    text-decoration: none; /* Permet d'enlever le soulignement du texte */
+    transition: color 0.3s; /* Permet de changer la couleur du bouton */
+}
+
+/* Au survol de la souris */
+.boxConnexion a:hover {
+    color: #414141;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+/* Les élements du menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.15em;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgb(0, 158, 166);
+    box-shadow: inset 0 0 10px #222222d3;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Au survol de la souris */
+.menu a:hover {
+    background-color: rgb(92, 195, 200);
+}
+
+/* Première boîte de présentation de F.C. */
+.boxHomeGauche {
+    width: auto;
+    height: auto;
+    border: 2px dashed black; /* Créé une bordure visible de la boîte, ici des pointillés */
+    padding: 20px;
+    margin: 20px;
+    margin-right: 30px;
+    margin-left: 75px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Deuxième boîte de présentation de F.C. */
+.boxHomeDroite {
+    width: auto;
+    height: auto;
+    border: 2px dashed black;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 75px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Boîte permettant de devenir un membre de F.C. */
+.boxHomeMembre {
+    display: flex;
+    flex-direction: column; /* Permet que les éléments dans la flexbox se place en colonne en non en ligne */
+    width: auto;
+    height: auto;
+    padding: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Downloads/Background1.jpg); /* Image de fond */
+    background-size: 100% 100%; /* Dimension de l'image de fond */
+}
+
+/* Texte "Devenir membre..." */
+.boxHomeMembreTitre {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Bouton pour s'inscrire */
+.boxHomeInscription {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 1.3em;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgba(0, 94, 99, 0.806);
+    box-shadow: inset 0 0 10px #4343438c;
+}
+
+.boxHomeInscription a {
+    color: #ebebeb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.boxHomeInscription a:hover {
+    color: #000000;
+}
+
+/* Titre de la rubrique */ 
+.boxRubrique {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+/* Boîte de chaque entreprise présenté */
+.boxCompanies {
+    display: grid; /* La boîte possède une grille permettant de placé plus facilement les éléments à l'intérieur */
+    grid-template-columns: 1fr auto; /* Définis la grille */
+    gap: 10px; /* Espacement */
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+/* Nom de l'entreprise */
+.boxCompaniesNom {
+    grid-column: 1; /* Emplacement dans la grille */
+    margin-left: 75px;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Description de l'entreprise */
+.boxCompaniesDescription {
+    grid-column: 1;
+    height: 115px;
+    max-width: 500px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+/* Nationalité de l'entreprise */
+.boxCompaniesDrapeau {
+    grid-column: 2;
+    width: 125px;
+    border-radius: 5px;
+}
+
+/* Vidéo de présentation de l'entreprise */
+.boxCompaniesVideo {
+    grid-column: 1 /span 2; /* span 2 permet que la video déborde sur la deuxième colonne */
+    margin-top: 10px;
+    width: 600px;
+}
+
+/* Contact de l'entreprise */
+.boxCompaniesContact {
+    grid-column: 1 /span 2;
+    width: screen;
+    height: 100px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: 3px dashed black;
+    border-radius: 5px;
+    color: black;
+    padding: 13px;
+}
+
+/* Boîte créant une séparation visuel entre 2 autres boîtes */
+.boxSeparation {
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    border-right: 2px dashed black;
+}
+
+/* Titre de la première partie */
+.boxInterTitre1 {
+    width: fit-content;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Titre de la deuxième partie */
+.boxInterTitre2 {
+    width: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-top: 2px solid black;
+}
+
+/* Boîte permettant de structurer les parties */
+.boxInter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 20px;
+}
+
+/* Boîte permettant d'aligner les différents éléments */
+.boxInterLigne {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Permet d'aligner les 6 boutons sur une ligne */ 
+}
+
+/* Boutons des pays de la première partie */
+.boxInterPays1 {
+    width: 180px;
+    font-size: 1.2em;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white; /* La couleur du texte */
+    border-radius: 5px;
+    background-color: rgb(0, 89, 94);
+    box-shadow: inset 0 0 10px #4343438c;
+}
+
+.boxInterPays1:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(0, 125, 132);
+}
+
+/* Boutons des pays de la deuxième partie */
+.boxInterPays2 {
+    width: 180px;
+    font-size: 1.2em;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(0, 133, 139);
+    box-shadow: inset 0 0 10px #4343438c;
+}
+
+.boxInterPays2:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(0, 173, 183);
+}
+
+/* Boutons de chaque pays */
+.boxGlobalPays {
+    width: 180px;
+    height: fit-content;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(0, 156, 164);
+    box-shadow: inset 0 0 10px #4343438c;
+}
+
+.boxGlobalPays a {
+    color: white;
+    text-decoration: none;
+}
+
+.boxGlobalPays:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(0, 207, 218);
+}
+
+/* Titre du pays choisis */
+.boxContactFRTitre {
+    width: fit-content;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 15px;
+    margin-left: 50px;
+    border-radius: 2px;
+    background-color: rgba(0, 178, 187, 0.521);
+}
+
+/* Boîte de chaque contact français */
+.boxContactFR {
+    display: flex;
+    width: screen;
+    height: auto;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+/* Permet de séparer la boîte parent en deux */
+.boxContactFRGauche {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+/* Permet de séparer la boîte parent en deux */
+.boxContactFRDroite {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 30px;
+}
+
+/* Logo du contact */
+.boxContactFRLogo {
+    width: 225px;
+    margin-top: 45px;
+    margin-left: 25px;
+}
+
+/* Lien vers le contact */
+.boxContactFRLien {
+    max-width: 225px;
+    border: 2px dashed black;
+    border-radius: 2px;
+    padding: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    font-size: 1.1em;
+}
+
+/* Nom de contact */
+.boxContactFRNom {
+    max-width: fit-content;
+    max-height: fit-content;
+    font-size: 2.2em;
+    font-weight: bold;
+    padding: 20px;
+    margin: 25px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+/* Description du contact */
+.boxContactFRDescription {
+    width: auto;
+    height: auto;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding: 20px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+/* Permet d'aligner les boutons qui sont à l'intérieur de la boîte */
+.boxNews {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 50px;
+}
+
+/* Boutons de chaque section de la page*/
+.boxNewsBouton {
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: center;
+    font-size: 1.4em;
+    border-radius: 5px;
+    background-color: rgb(0, 179, 188);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.532);
+}
+
+.boxNewsBouton a {
+    color: white;
+    text-decoration: none;
+}
+
+.boxNewsBouton:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(90, 197, 203);
+}
+
+/* Titre de la première section */
+.boxNewsTitre {
+    width: fit-content;
+    font-size: 2.3em;
+    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin: 15px;
+    margin-left: 100px;
+    border-radius: 2px;
+    background-color: rgb(111, 185, 189);
+}
+
+/* Boîte permettant de créer une séparation visuel entre le titre et la section */
+.boxSeparation2 {
+    width: auto;
+    margin: 0;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 0;
+    border-top: 2px solid black;
+}
+
+/* Boîte pour chaque actualité */
+.boxNewsLigne {
+    display: flex;
+    margin: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: screen;
+    justify-content: center;
+}
+
+/* Image en lien avec l'actualité */
+.boxNewsImage {
+    display: flex;
+    width: 260px;
+    max-width: 300px;
+    min-width: 150px;
+    height: 260px;
+    max-height: 300px;
+    min-height: 150px;
+    border: 2px solid black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxNewsImage img {
+    width: 70%; /* L'image prendra que 70% de la largeur de la boîte */
+    height: 70%; /* L'image prendra que 70% de la hauteur de la boîte */
+}
+
+/* Boîte que contient le texte de l'actualité */
+.boxNewsTexte {
+    display: flex;
+    width: 950px;
+    padding: 25px;
+    border: 2px solid black;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Le texte */
+.boxNewsTexteP {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px dashed black;
+    border-radius: 3px;
+}
+
+/* Boîte pour les Calls */
+.boxCall {
+    display: flex;
+    width: screen;
+    height: 700px;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Downloads/Background2.jpg);
+    background-size: 100% 100%; 
+}
+
+/* Texte de la boîte Call*/
+.boxCallTexte {
+    width: fit-content;
+    font-size: 2.5em;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 2px;
+    background-color: rgba(111, 185, 189, 0.667);
+}
+
+/* Boîte de chaque projet */
+.boxProject {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+    margin: 75px;
+    margin-left: 175px;
+    margin-right: 175px;
+    border-bottom: 2px solid black;
+}
+
+/* Titre du projet */
+.boxProjectTitre {
+    font-size: 2.2em;
+    margin-bottom: 35px;
+}
+
+/* Description du projet */
+.boxProjectTexte {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px dashed black;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Informations supplémentaires sur le projet */
+.boxProjectInfo {
+    font-style: italic;
+}
+
+/* Bouton Apply pour le projet */
+.boxProjectApply {
+    display: block;
+    width: 125px;
+    height: fit-content;
+    padding: 15px;
+    margin: auto;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(0, 74, 78);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.532);
+}
+
+.boxProjectApply:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(33, 152, 158);
+}
+
+/* Titre de la section */
+.boxPartnersTitre {
+    width: fit-content;
+    font-size: 2.3em;
+    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    background-color: rgb(111, 185, 189);
+}
+
+/* Logo des partenaires */
+.boxPartnersImage {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxPartnersImage img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Bouton pour devenir un partenaire */
+.boxPartnersBouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Les deux flèches entourant le bouton*/
+.boxPartnersBouton img {
+    width: 75px;
+    height: 75px;
+}
+
+/* Le bouton */
+.boxPartnersBecome {
+    width: 250px;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: center;
+    font-size: 1.4em;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(0, 63, 66);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.532);
+}
+
+.boxPartnersBecome:hover {
+    transition: background-color 0.3s;
+    background-color: rgb(0, 131, 138);
+}
+
+/* Bas de la page */
+.boxBasDePage {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    background: black;
+}
+
+/* Permet de changer différentes valeurs de chaque boîte et élément afin d'avoir du Responsive Design */
+@media screen and (max-width: 1275px) {
+    .divFlex {
+    flex-direction: column;
+    }
+
+    .boxEntete {
+        font-size: 0.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxLogoFC {
+        width: 100px;
+        left: 25px;
+    }
+
+    .boxConnexion {
+        font-size: 1.5em;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .menu a {
+        font-size: 0.7em;
+        padding: 7px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .boxHomeGauche {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    .boxHomeDroite {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    .boxCompanies {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxCompaniesDescription {
+        max-width: 430px;
+    }
+
+    .boxCompaniesVideo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxInterLigne {
+        grid-template-columns: repeat(3, 1fr); /* Les boutons seront placés 3 par 3 sur une ligne */
+    }
+
+    .boxContactFRLogo {
+        width: 150px;
+    }
+
+    .boxContactFRLien {
+        max-width: 150px;
+        font-size: 1em;
+    }
+    
+    .boxContactFRNom {
+        font-size: 1.7em;
+    }
+    
+    .boxContactFRDescription {
+        font-size: 0.8em;
+    }
+
+    .boxNewsBouton {
+        width: 200px;
+        padding: 7.5px;
+        margin: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .boxNewsTitre {
+        font-size: 1.3em;
+        padding: 6px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .boxNewsLigne {
+        flex-direction: column; /* Change la direction de placement des élément de la flexbox */
+    }
+
+    .boxNewsImage {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .boxNewsImage img{
+        width: 60%;
+        height: 60%;
+    }
+
+    .boxNewsTexte {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .boxCallTexte {
+        font-size: 1.5em;
+        padding: 9px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .boxPartnersTitre {
+        font-size: 1.3em;
+        padding: 6px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .boxPartnersImage {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .boxPartnersImage img {
+        width: 180px;
+        height: 180px;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .boxEntete {
+        font-size: 0.5em;
+    }
+
+    .boxLogoFC {
+        width: 30px;
+        height: 30px;
+        left: 5px;
+        margin-top: 5px;
+    }
+
+    .boxConnexion {
+        right: 5px;
+        margin-top: 10px;
+        font-size: 1.3em;
+    }
+
+    .menu {
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+
+    .menu a {
+        font-size: 0.45em;
+        padding: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .boxHomeGauche {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .boxHomeDroite {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+    .boxHomeMembre {
+        height: 380px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .boxHomeMembreTitre {
+        padding: 0px;
+    }
+
+    .boxHomeInscription {
+        padding: 8px;
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 0.6em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .boxRubrique {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxCompanies {
+        gap: 5px;
+    }
+    
+    .boxCompaniesNom {
+        margin-left: 40px;
+        font-size: 1.5em;
+    }
+
+    .boxCompaniesDescription {
+        max-width: 190px;
+        height: 150px;
+        font-size: 0.8em;
+        margin-left: 10px;
+        margin-top: 10px;
+        line-height: 1.4;
+    }
+
+    .boxCompaniesDrapeau {
+        width: 80px;
+        border-radius: 3px;
+    }
+    
+    .boxCompaniesVideo {
+        width: 350px;
+    }
+    
+    .boxCompaniesContact {
+        height: 90px;
+        font-size: 0.9em;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .boxInter {
+        margin: 10px;
+    }
+
+    .boxInterPays1 {
+        width: 100px;
+        font-size: 1em;
+        padding: 6px;
+        margin: 15px;
+        margin-left: 7px;
+        margin-right: 7px;
+        border-radius: 3px;
+    }
+
+    .boxInterTitre2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .boxInterPays2 {
+        width: 100px;
+        font-size: 1em;
+        padding: 6px;
+        margin: 15px;
+        margin-left: 7px;
+        margin-right: 7px;
+        border-radius: 3px;
+    }
+    
+    .boxGlobalPays {
+        width: 100px;
+        font-size: 1em;
+        padding: 6px;
+        margin: 15px;
+        margin-left: 7px;
+        margin-right: 7px;
+        border-radius: 3px;
+    }
+
+    .boxContactFR {
+        margin: 15px;
+    }
+
+    .boxContactFRGauche {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    
+    .boxContactFRDroite {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .boxContactFRLogo {
+        width: 80px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .boxContactFRLien {
+        max-width: 150px;
+        padding: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        font-size: 0.8em;
+    }
+    
+    .boxContactFRNom {
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 13px;
+    }
+    
+    .boxContactFRDescription {
+        line-height: 1.3;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+
+    .boxNews {
+        margin: 20px;
+    }
+
+    .boxNewsBouton {
+        height: 75px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .boxSeparation2 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .boxNewsTitre {
+        margin: 0px;
+        margin-left: 35px;
+    }
+
+    .boxNewsLigne {
+        margin: 15px;
+        margin-bottom: 15px;
+    }
+
+    .boxNewsTexte {
+        width: 300px;
+        margin: auto;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .boxNewsTexteP {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .boxCall {
+        height: 250px;
+    }
+
+    .boxProject {
+        padding-bottom: 20px;
+        margin: 40px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+    .boxProjectTitre {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    
+    .boxProjectTexte {
+        padding: 8px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 1.1em;
+    }
+    
+    .boxProjectInfo {
+        font-size: 0.9em;
+    }
+    
+    .boxProjectApply {
+        width: 100px;
+        padding: 12px;
+        font-size: 1.2em;
+        border-radius: 4px;
+    }
+    
+    .boxPartnersImage img {
+        width: 150px;
+        height: 150px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .boxPartnersBouton {
+        gap: 5px;
+    }
+
+    .boxPartnersBouton img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .boxPartnersBecome {
+        width: 225px;
+        margin: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.2em;
+        border-radius: 4px;
+    }
+    
+    .boxBasDePage {
+        height: 30px;
+        padding: 30px;
+    }
+}
